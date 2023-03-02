@@ -32,17 +32,17 @@ const iconos = {
   };
   
   const imgs = {
-    clearSky: { src: "../imgs/clear sky.jpg" },
-    drizzle: { src: "../imgs/Drizzle.jpg" },
-    fog: { src: "../imgs/Fog.jpg" },
-    shower: { src: "../imgs/chaparron.jpg" },
-    freezinDrizzle: { src: "../imgs/Freezing Drizzle.jpg" },
-    hail: { src: "../imgs/hail.jpg" },
-    hunderstorm: { src: "../imgs/hunderstorm with slight.jpg" },
-    freezinRain: { src: "../imgs/lluvia helada.png" },
-    mainly: { src: "../imgs/Mainly clear.jpg" },
-    rain: { src: "../imgs/Rain.jpg" },
-    snow: { src: "../imgs/Snow fall.jpg" },
+    clearSky: { src: "./imgs/clear sky.jpg" },
+    drizzle: { src: "./imgs/Drizzle.jpg" },
+    fog: { src: "./imgs/Fog.jpg" },
+    shower: { src: "./imgs/chaparron.jpg" },
+    freezinDrizzle: { src: "./imgs/Freezing Drizzle.jpg" },
+    hail: { src: "./imgs/hail.jpg" },
+    hunderstorm: { src: "./imgs/hunderstorm with slight.jpg" },
+    freezinRain: { src: "./imgs/lluvia helada.png" },
+    mainly: { src: "./imgs/Mainly clear.jpg" },
+    rain: { src: "./imgs/Rain.jpg" },
+    snow: { src: "./imgs/Snow fall.jpg" },
   };
   
   const cambioImgs = (icon) => {
