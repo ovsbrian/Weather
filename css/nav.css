@@ -1,0 +1,211 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(209, 201, 201, 0.801);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+nav {
+  grid-column: 1 / 4;
+  grid-row: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding-right: 50px;
+
+}
+
+.logo {
+    padding-top: 10px;
+  }
+  .marca {
+    width: 40px;
+  }
+  nav .logo a {
+    font-size: 30px;
+  
+    color: #424949;
+    text-decoration: none;
+  }
+  
+  nav .menu {
+    color: #424949;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  nav .menu ul {
+    height: 100%;
+  }
+  
+  nav .menu li {
+    align-items: center;
+  }
+  .btn-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #424949;
+  }
+  nav .menu li i {
+    text-decoration: none;
+    height: 100%;
+    width: 23px;
+    font-size: 23px;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding-left: 20px;
+    border: 1px solid #ccc; /* Estilo del borde */
+    border-radius: 5px; /* Estilo del borde */
+    font-size: 16px; /* Tamaño de fuente */
+    height: 36px; /* Altura del input */
+    width: 300px; /* Ancho del input */
+    box-sizing: border-box; /* Ajustamos el tamaño total del input */
+    border-color: #424949;
+  }
+  
+  input[type="text"]:focus {
+    border: 2px solid #424949;
+  
+    border-color: #424949;
+    outline: none; /* Cambiar el color del borde al azul cuando se hace clic */
+  }
+  input[type="text"]::placeholder {
+    color: #424949; /* color deseado en hexadecimal, en este caso rojo */
+  }
+  
+  .btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+
+  #city-results {
+    padding-left: 0;
+    max-width: 300px;
+    position: absolute;
+    margin-top: 10px;
+    flex-direction: column;
+    z-index: 3;
+  }
+  
+  .liAparece {
+    list-style: none;
+    height: 100%;
+    background-color: #441b1b;
+    color: white;
+    user-select: none;
+    padding: 10px;
+  }
+  
+  .liAparece:hover {
+    background-color: #424949;
+  }
+  
+  .min {
+    color: rgb(29, 156, 156);
+  }
+  
+  .max {
+    color: red;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedorImg {
+  grid-column: 1 / 4;
+  grid-row: 2;
+ 
+}
+
+.date {
+  grid-column: 1 /2;
+  grid-row: 3;
+ 
+}
+
+.post {
+  grid-column: 2 / 4  ;
+  grid-row: 3;
+  
+}
+
+@media (max-width: 600px) {
+    .nav.cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+      }
+      .search-container {
+       margin: 0 auto;
+      }
+      .post{
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+    .date{
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
+
+
+     .block-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    
+}
+
+ 

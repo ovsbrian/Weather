@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/imgContent.css">
+    <link rel="stylesheet" href="/css/date.css">
+    <link rel="stylesheet" href="/css/gf.css">
+    <script src="https://kit.fontawesome.com/0099e19613.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav cards">
+
+            <div class="logo">
+                <a href="#"><img class="marca" src="imgs/marca.png" alt="ovsbrian"></a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <div class="search-container">
+                        <form class="form">
+                            <input type="text" placeholder="Enter your city" class="search-input" id="city-input">
+                            <button class="btn-search" id="search-btn" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <ul id="city-results"></ul>
+                    </div>
+                </li>
+            </ul>
+
+
+
+        </nav>
+
+        <div class="contenedorImg">
+            <div class="img-time">
+
+                <img src="/imgs/fondo.jpg" id="img_time" alt="">
+                <div class="time-city">
+                    <i class="fa-regular fa-sun"></i>
+                    <h2 id="temp_bg">22°</h2>
+                    <span id="cityName"></span>
+                </div>
+                <div class="hr-day">
+                    <span>
+                        10:00 am
+                    </span>
+                    <span>
+                        Sunny, Monday
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="date">
+            <div class="block-1">
+                <div class="humidity">
+                    <div class="icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="38" viewBox="0 0 24 24" fill="none"
+                            stroke="#424949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z">
+                            </path>
+                            <path
+                                d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="div-icon-block">
+                        <span>Humidity</span>
+                        <span id="humidityText"></span>
+                    </div>
+                </div>
+                <div class="sunset">
+                    <div class="icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="38" viewBox="0 0 24 24" fill="none"
+                            stroke="#424949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 10V2"></path>
+                            <path d="m4.93 10.93 1.41 1.41"></path>
+                            <path d="M2 18h2"></path>
+                            <path d="M20 18h2"></path>
+                            <path d="m19.07 10.93-1.41 1.41"></path>
+                            <path d="M22 22H2"></path>
+                            <path d="m16 6-4 4-4-4"></path>
+                            <path d="M16 18a4 4 0 0 0-8 0"></path>
+                        </svg>
+                    </div>
+                    <div class="div-icon-block">
+                        <span>Sunset</span>
+                        <span id="SunsetText"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="block-1">
+                <div class="wind">
+                    <div class="icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="38" viewBox="0 0 24 24" fill="none"
+                            stroke="#424949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+                            <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+                            <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+                        </svg>
+                    </div>
+                    <div class="div-icon-block">
+                        <span>Wind</span>
+                        <span id="windText"></span>
+                    </div>
+                </div>
+                <div class="sunrise">
+                    <div class="icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="38" viewBox="0 0 24 24" fill="none"
+                            stroke="#424949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v8"></path>
+                            <path d="m4.93 10.93 1.41 1.41"></path>
+                            <path d="M2 18h2"></path>
+                            <path d="M20 18h2"></path>
+                            <path d="m19.07 10.93-1.41 1.41"></path>
+                            <path d="M22 22H2"></path>
+                            <path d="m8 6 4-4 4 4"></path>
+                            <path d="M16 18a4 4 0 0 0-8 0"></path>
+                        </svg>
+                    </div>
+                    <div class="div-icon-block">
+                        <span>Sunrise</span>
+                        <span id="hrSunrise"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="next-day">
+                <div class="info">
+                    <p>Temperature</p>
+                    <div class="graphic"> <canvas id="myChart"  height="120"></canvas></div>
+                    <div class="days">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/js/api.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/imgBg.js"></script>
+</body>
+
+</html>
