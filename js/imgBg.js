@@ -32,7 +32,7 @@ const iconos = {
   };
   
   const imgs = {
-    clearSky: { src: "./imgs/clear sky.jpg" },
+    clearSky: { src: "./imgs/clear_sky.jpg" },
     drizzle: { src: "./imgs/Drizzle.jpg" },
     fog: { src: "./imgs/Fog.jpg" },
     shower: { src: "./imgs/chaparron.jpg" },
