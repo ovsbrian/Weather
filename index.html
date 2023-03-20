@@ -27,7 +27,7 @@
                     <div class="search-container">
                         <form class="form">
                             <input type="text" placeholder="Enter your city" class="search-input" id="city-input">
-                            <button class="btn-search" id="search-btn" type="submit"><i
+                            <button class="btn-search" id="search-btn" type="submit" disabled><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <ul id="city-results"></ul>
@@ -48,14 +48,7 @@
                     <h2 id="temp_bg">22°</h2>
                     <span id="cityName"></span>
                 </div>
-                <div class="hr-day">
-                    <span>
-                        10:00 am
-                    </span>
-                    <span>
-                        Sunny, Monday
-                    </span>
-                </div>
+               
             </div>
         </div>
         <div class="date">
@@ -135,9 +128,9 @@
         </div>
         <div class="post">
             <div class="next-day">
-                <div class="info">
+                <div class="info" >
                     <p>Temperature</p>
-                    <div class="graphic"> <canvas id="myChart"  height="80"  ></canvas></div>
+                    <div class="graphic none" id="divChart"> <canvas id="myChart"  height="80"   ></canvas></div>
                     <div class="days">
                     </div>
                 </div>

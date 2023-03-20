@@ -8,6 +8,10 @@ body{
 
 
 .container {
+  max-width: 1200px;
+  background-color:  rgba(228, 228, 228, 0.877) ;
+  border-radius: 20px;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -73,12 +77,12 @@ nav {
   
   .search-input {
     padding-left: 20px;
-    border: 1px solid #ccc; /* Estilo del borde */
-    border-radius: 5px; /* Estilo del borde */
-    font-size: 16px; /* Tamaño de fuente */
-    height: 36px; /* Altura del input */
-    width: 300px; /* Ancho del input */
-    box-sizing: border-box; /* Ajustamos el tamaño total del input */
+    border: 1px solid #ccc;   
+    border-radius: 5px; 
+    font-size: 16px; 
+    height: 36px;  
+    width: 300px;  
+    box-sizing: border-box;   
     border-color: #424949;
   }
   
@@ -86,13 +90,14 @@ nav {
     border: 2px solid #424949;
   
     border-color: #424949;
-    outline: none; /* Cambiar el color del borde al azul cuando se hace clic */
+    outline: none;  
   }
   input[type="text"]::placeholder {
-    color: #424949; /* color deseado en hexadecimal, en este caso rojo */
+    color: #424949;  
   }
   
   .btn-search {
+  
     position: absolute;
     top: 0;
     right: 0;
@@ -101,7 +106,7 @@ nav {
     border: none;
     background-color: transparent;
     outline: none;
-    cursor: pointer;
+    cursor:default ;
   }
 
 
@@ -122,6 +127,7 @@ nav {
     color: white;
     user-select: none;
     padding: 10px;
+    cursor: pointer;
   }
   
   .liAparece:hover {
@@ -129,33 +135,14 @@ nav {
   }
   
   .min {
-    color: rgb(29, 156, 156);
+    color: rgba(0, 0, 0, 0.856);
   }
   
   .max {
-    color: red;
+    color: rgba(255, 0, 0, 0.829);
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+ 
 .contenedorImg {
   grid-column: 1 / 4;
   grid-row: 2;

@@ -9,6 +9,9 @@
   justify-content: center;
   width: 100%;
 }
+.none{
+  display: none;
+}
 .days {
   margin-top: 20px;
   display: flex;

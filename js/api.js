@@ -90,7 +90,7 @@ function obtenerClima(lat, lon) {
 
             tempHrs.datasets[0].data = grafica;
             myChart.update();
-
+           
             writeSunrise(data)
             writeSunset(data)
             writeWind(data)
@@ -98,6 +98,7 @@ function obtenerClima(lat, lon) {
             writeDays(data)
             cambioImgs(data.current_weather.weathercode)
             cityResults.style.display = 'none';
+            document.getElementById("divChart").classList.remove('none')
         })
         .catch(error => console.error(error));
 }

@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
  
-  padding: 20px;
+ 
   align-items: center;
  }
 
   .next-day {
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
    
     justify-content: center;
@@ -26,7 +26,7 @@
   .sunrise {
     width: 150px;
     height: 100px;
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgb(192, 187, 187, 0.4);
     display: grid;

@@ -6,11 +6,12 @@
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    
   }
   #img_time {
- 
+    height:auto;
     width: 100%;
-   
+    opacity: 0.8;
     filter: blur(1px);
   }
   .time-city {
@@ -32,13 +33,4 @@
   .time-city i {
     margin-left: 10px;
   }
-  
-  .hr-day {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    right: 12px;
-    bottom: 12px;
-  }
+   
